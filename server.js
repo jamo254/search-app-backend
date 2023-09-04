@@ -37,7 +37,7 @@ app.post('/search', [
                 });
 
                 res.json(result);
-            }, 1000);
+            }, 5000);
         } catch (error) {
             console.error('Error in /search endpoint:', error);
             res.status(500).json({ error: 'Internal server error' });
